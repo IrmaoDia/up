@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#c40000">
+
+  <title>NO CIERRES ESTA PÁGINA — Procesando tu acceso</title>
+  <meta name="description" content="Estamos procesando tu acceso. No cierres esta página.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Player: preconnect para carregar o vídeo mais rápido -->
+  <link rel="preconnect" href="https://scripts.converteai.net">
+  <link rel="preconnect" href="https://cdn.converteai.net">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       SEÇÃO 1 — ALERTA (fundo vermelho)
+  ============================================= -->
+  <header class="alert-bar" role="alert">
+    <div class="container">
+      <h1 class="alert-bar__title">No cierres esta página</h1>
+
+      <p class="alert-bar__text">
+        <strong>Estamos procesando tu acceso. Cerrar esta página ahora podría
+        retrasar el envío de tu material.</strong>
+      </p>
+    </div>
+  </header>
+
+  <!-- ============================================
+       SEÇÃO 2 — MENSAGEM + VÍDEO (fundo branco)
+  ============================================= -->
+  <main class="video-section">
+    <div class="container">
+
+      <h2 class="video-section__title">
+        Antes de recibir tu acceso,<br>
+        mira este mensaje importante
+      </h2>
+
+      <span class="video-section__emoji" aria-hidden="true">👇</span>
+
+      <div class="video-section__player">
+        <vturb-smartplayer
+          id="vid-6a4ab6779fb73f80a475dc05"
+          style="display: block; margin: 0 auto; width: 100%; max-width: 400px;">
+          <div class="vturb-player-placeholder"
+               style="position: relative; width: 100%; padding: 142.22222222222223% 0 0; z-index: 0; background-color: black;">
+          </div>
+        </vturb-smartplayer>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">© <span id="year"></span> Todos los derechos reservados.</p>
+      <p class="footer__disclaimer">
+        Este sitio no forma parte de Facebook Inc. ni de Google LLC.
+        Además, este sitio NO está respaldado por Facebook ni por Google de ninguna manera.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/player.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
