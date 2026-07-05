@@ -163,6 +163,26 @@ body {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
+/* Contador de vagas
+   Oculto por padrão — exibido pelo cta-delay.js aos 7:38 da VSL */
+.video-section__spots {
+  display: none;
+  max-width: 400px;
+  margin: 28px auto 0;
+  font-size: clamp(0.95rem, 3.8vw, 1.1rem);
+  color: var(--color-text);
+}
+
+.video-section__spots strong {
+  color: var(--color-danger);
+  font-weight: 800;
+}
+
+.video-section__spots.is-visible {
+  display: block;
+  animation: fade-in-up 0.6s ease-out both;
+}
+
 /* Botão / checkout da Hotmart
    Oculto por padrão — exibido pelo cta-delay.js aos 8:20 da VSL */
 .video-section__cta {
