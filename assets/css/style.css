@@ -163,10 +163,17 @@ body {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
-/* Botão / checkout da Hotmart */
+/* Botão / checkout da Hotmart
+   Oculto por padrão — exibido pelo cta-delay.js aos 8:20 da VSL */
 .video-section__cta {
   max-width: 400px;
   margin: 28px auto 0;
+  display: none;
+}
+
+.video-section__cta.is-visible {
+  display: block;
+  animation: fade-in-up 0.6s ease-out both;
 }
 
 /* ----------------------------------------------------------
@@ -204,6 +211,17 @@ body {
 @keyframes progress-grow {
   from { width: 0; }
   to   { width: 90%; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
