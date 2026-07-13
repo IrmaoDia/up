@@ -5,9 +5,8 @@
    2. Reset / base
    3. Seção de alerta (vermelha)
    4. Seção do vídeo (branca)
-   5. Footer
-   6. Animações
-   7. Responsividade
+   5. Animações
+   6. Responsividade
 ========================================================== */
 
 /* ----------------------------------------------------------
@@ -20,8 +19,6 @@
   --color-white:         #ffffff;
   --color-text:          #14161a;
   --color-text-muted:    #6b7280;
-  --color-footer-bg:     #14161a;
-  --color-footer-text:   #9ca3af;
 
   --font-base: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
 
@@ -197,31 +194,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   5. FOOTER
----------------------------------------------------------- */
-.footer {
-  background-color: var(--color-footer-bg);
-  color: var(--color-footer-text);
-  text-align: center;
-  padding: 28px 0;
-}
-
-.footer__copy {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.footer__disclaimer {
-  font-size: 0.72rem;
-  line-height: 1.6;
-  max-width: 520px;
-  margin: 0 auto;
-  opacity: 0.75;
-}
-
-/* ----------------------------------------------------------
-   6. ANIMAÇÕES
+   5. ANIMAÇÕES
 ---------------------------------------------------------- */
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
@@ -252,7 +225,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   7. RESPONSIVIDADE
+   6. RESPONSIVIDADE
 ---------------------------------------------------------- */
 @media (max-width: 480px) {
   .alert-bar {
