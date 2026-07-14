@@ -3,7 +3,7 @@
    Estrutura:
    1. Variáveis de tema
    2. Reset / base
-   3. Hero (amarelo)
+   3. Hero (verde)
    4. Seção do vídeo (branca)
    5. Animações
    6. Responsividade
@@ -13,9 +13,9 @@
    1. VARIÁVEIS DE TEMA
 ---------------------------------------------------------- */
 :root {
-  --color-accent:        #fff06e;
-  --color-hero-text:     #000000;
-  --color-danger:        #c40000;
+  --color-accent:        #16a34a;
+  --color-hero-text:     #ffffff;
+  --color-danger:        #e00000;
   --color-white:         #ffffff;
   --color-text:          #14161a;
   --color-text-muted:    #6b7280;
@@ -59,14 +59,14 @@ body {
 }
 
 /* ----------------------------------------------------------
-   3. HERO (AMARELO)
+   3. HERO (VERDE)
 ---------------------------------------------------------- */
 .hero {
   background-color: var(--color-accent);
   color: var(--color-hero-text);
   text-align: center;
   padding: 34px 0 32px;
-  box-shadow: 0 4px 18px rgba(255, 240, 110, 0.5);
+  box-shadow: 0 4px 18px rgba(22, 163, 74, 0.35);
 }
 
 .hero__title {
@@ -76,6 +76,7 @@ body {
   letter-spacing: 0.01em;
   max-width: 560px;
   margin: 0 auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero__danger {
@@ -98,20 +99,13 @@ body {
   letter-spacing: 0.01em;
   color: var(--color-text);
   max-width: 560px;
-  margin: 0 auto;
+  margin: 0 auto 26px;
 }
 
 .video-section__highlight {
   color: #000000;
   font-weight: 800;
   text-transform: uppercase;
-}
-
-.video-section__emoji {
-  display: block;
-  font-size: clamp(1.8rem, 6vw, 2.4rem);
-  margin: 12px auto 26px;
-  animation: bounce 1.4s ease-in-out infinite;
 }
 
 .video-section__player {
@@ -138,11 +132,6 @@ body {
 /* ----------------------------------------------------------
    5. ANIMAÇÕES
 ---------------------------------------------------------- */
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(8px); }
-}
-
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -151,12 +140,6 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .video-section__emoji {
-    animation: none;
   }
 }
 
