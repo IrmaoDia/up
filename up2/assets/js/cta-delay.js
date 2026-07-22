@@ -1,5 +1,5 @@
 /* ==========================================================
-   CTA DELAY — Exibe o botão Hotmart no minuto 4:12 da VSL
+   CTA DELAY — Exibe o botão Hotmart no minuto 1:42 da VSL
    O contador só avança depois que a pessoa dá play: o evento
    "timeupdate" do smartplayer (VTurb) dispara apenas com o
    vídeo em reprodução.
@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  var CTA_TIME_SECONDS = 4 * 60 + 12; // 4:12 — botão Hotmart
+  var CTA_TIME_SECONDS = 1 * 60 + 42; // 1:42 — botão Hotmart
   var MAX_ATTEMPTS = 30;              // ~30s aguardando o player carregar
 
   var cta = document.querySelector(".video-section__cta");
